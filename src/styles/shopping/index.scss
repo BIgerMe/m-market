@@ -1,0 +1,52 @@
+.detail-card{
+  margin:10px 10px 0 10px;
+  border-radius: 7px;
+  background: #ffffff;
+  //box-shadow: inset 5px 5px 10px #efebeb,
+  //inset -5px -5px 10px #ffffff!important;
+}
+
+//address地址卡片样式
+.address{
+  padding: 15px;
+  background: white;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  .content{
+    .address_pca,.address_user{
+      font-size: 12px;
+      padding: 5px 0;
+      font-family: Serif;
+    }
+    .address_detail{
+      font-size: 18px;
+      font-family: SimHei;
+    }
+  }
+}
+.address::before{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: repeating-linear-gradient(-45deg,var(--van-warning-color) 0,var(--van-warning-color) 20%,transparent 0,transparent 25%,var(--van-primary-color) 0,var(--van-primary-color) 45%,transparent 0,transparent 50%);
+  background-size: 80px;
+  content: "";
+}
+
+//price价格样式￥xx.xx
+.price-symbol,.price-decimal,.price-fraction{
+  position: relative;
+  top: -.75em;
+  font-size: 13px;
+}
+.price-whole{
+  font-size: 23px;
+}
+.price-symbol,.price-decimal,.price-fraction,.price-whole{
+  color: #ff4142;
+}

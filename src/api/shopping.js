@@ -45,10 +45,26 @@ export function cartList() {
     method: 'get',
   })
 }
+//购物车列表
+export function cartListById(data) {
+  return request({
+    url: '/z/cart/cartListById',
+    method: 'get',
+    params:data
+  })
+}
 //删除购物车
 export function delCart(data) {
   return request({
     url: '/z/cart/del',
+    method: 'post',
+    data
+  })
+}
+/*更换数量*/
+export function changeNum(data) {
+  return request({
+    url: '/z/cart/changeNum',
     method: 'post',
     data
   })

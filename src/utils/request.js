@@ -10,7 +10,6 @@ import {
 } from '@/config'
 import router from '@/router'
 import { isArray } from '@/utils/validate'
-import {message} from 'ant-design-vue'
 import { useUserStore } from '@/store/modules/user'
 
 /**
@@ -26,10 +25,10 @@ const handleCode = (code, msg) => {
       router.push({ path: '/login' }).catch(() => {})
       break
     case noPermissionCode:
-      message.error(msg || `没有权限访问`, 'error')
+      // message.error(msg || `没有权限访问`, 'error')
       break
     default:
-      message.error(msg || `后端接口${code}异常`)
+      // message.error(msg || `后端接口${code}异常`)
       break
   }
 }
@@ -97,7 +96,7 @@ instance.interceptors.response.use(
         const code = msg.substr(msg.length - 3)
         msg = '后端接口' + code + '异常'
       }
-      message.error(msg || `后端接口未知异常`)
+      // message.error(msg || `后端接口未知异常`)
       return Promise.reject(error)
     }
   }
