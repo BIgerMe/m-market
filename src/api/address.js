@@ -6,6 +6,29 @@ export async function pca(){
     method: 'get',
   })
 }
+//选择地址信息
+export function select() {
+  return request({
+    url: '/z/address/select',
+    method: 'get'
+  })
+}
+//选择地址信息
+export function doSelect(data) {
+  return request({
+    url: '/z/address/doSelect',
+    method: 'post',
+    data
+  })
+}
+//用户地址信息
+export function detail(data) {
+  return request({
+    url: '/z/address/detail',
+    method: 'get',
+    params:data
+  })
+}
 //用户地址信息
 export function list() {
   return request({
@@ -17,6 +40,14 @@ export function list() {
 export function add(data) {
   return request({
     url: '/z/address/add',
+    method: 'post',
+    data
+  })
+}
+//用户地址信息
+export function update(data) {
+  return request({
+    url: '/z/address/update',
     method: 'post',
     data
   })

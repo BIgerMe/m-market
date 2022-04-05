@@ -4,8 +4,7 @@
   </div>
   <div>
     <van-tabbar v-model="active" @change="changeTab">
-      <van-tabbar-item icon="shop-o">商城</van-tabbar-item>
-      <van-tabbar-item icon="location-o">本地</van-tabbar-item>
+      <van-tabbar-item icon="location-o">本地商城</van-tabbar-item>
       <van-tabbar-item icon="shopping-cart-o">购物车</van-tabbar-item>
       <van-tabbar-item icon="user-o">我的</van-tabbar-item>
     </van-tabbar>
@@ -47,16 +46,12 @@
             this.$router.push('/shopping/')
             break
           case 1:
-            this.$router.push('/shopping/')
-            break;
-          case 2:
             this.$router.push('/shopping/cart')
             break;
-          case 3:
-            this.$router.push('/shopping/')
+          case 2:
+            this.$router.push('/user/index')
             break;
           default:
-            console.log(e)
             break;
         }
       },

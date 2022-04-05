@@ -9,7 +9,7 @@ export const useUserStore = defineStore({
             // accessToken:getAccessToken(),
             accessToken:'55_I00_JjwDa6yk4X-fWySPCtlA_y1DJvJKyusirv7p52HbSagcDaWDTkZNq5lf98RRfTTqro1o3kHW9Ya96tkdtr1JvcnSmpvtBHDKPZKvtNE',
             username: '',
-            nickname: '站长',
+            nickname: '小明GOGO',
             avatar:'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIrAkicKperIgK2JQibYk82GYzDp2T5t9AxLfZY15Slic7BSyLp6mu53Syc5oJgI58Sgibq2IfL83XNaw/132',
             role:[],
         }
